@@ -1,6 +1,6 @@
+
 export default {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    // Tailwind est géré via CDN dans index.html pour éviter les erreurs de build
   },
 }
