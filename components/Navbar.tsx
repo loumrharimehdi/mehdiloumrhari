@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
           <div className="w-8 h-8 bg-gradient-to-tr from-[#FF69B4] to-[#FFB6C1] rounded-full flex items-center justify-center text-white shadow-lg shadow-pink-200 group-hover:scale-110 transition-transform">
             <Heart size={16} fill="currentColor" />
           </div>
-          <span className="hidden sm:block text-[#1D1D1F] group-hover:text-[#FF69B4] transition-colors">Mehdi Loumrhari</span>
+          <span className="text-[#1D1D1F] group-hover:text-[#FF69B4] transition-colors">Mehdi Loumrhari</span>
         </div>
 
         {/* Desktop Links */}

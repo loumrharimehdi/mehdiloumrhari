@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Subtitle with Benefit */}
-        <p className="text-lg md:text-2xl text-gray-500 max-w-2xl mx-auto leading-relaxed font-medium mt-4">
+        <p className="text-lg md:text-2xl text-gray-600 max-w-2xl mx-auto leading-relaxed font-medium mt-4">
           Votre business mérite un site pro <span className="text-[#FF69B4] font-bold">dès demain</span>. <br/>
           Design moderne, clé en main, sans stress.
         </p>
@@ -68,7 +68,7 @@ export const Hero: React.FC = () => {
           
           <a 
             href="#work" 
-            className="w-full sm:w-auto px-8 py-5 rounded-[2rem] bg-white border border-gray-200 text-gray-600 hover:text-[#FF69B4] hover:border-[#FFB6C1] font-bold text-lg transition-all flex items-center justify-center gap-2 hover:shadow-lg"
+            className="w-full sm:w-auto px-8 py-5 rounded-[2rem] bg-white border border-gray-200 text-gray-700 hover:text-[#FF69B4] hover:border-[#FFB6C1] font-bold text-lg transition-all flex items-center justify-center gap-2 hover:shadow-lg shadow-sm"
           >
             Voir des exemples
           </a>
