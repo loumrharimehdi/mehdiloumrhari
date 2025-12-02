@@ -13,14 +13,14 @@ import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#FAFAFA] text-[#1D1D1F] font-sans selection:bg-pink-200 selection:text-black">
+    <div className="min-h-screen bg-[#FAFAFA] text-[#1D1D1F] font-sans selection:bg-pink-200 selection:text-black overflow-x-hidden">
       <Navbar />
-      <main className="relative">
+      <main className="relative flex flex-col gap-0">
         <Hero />
-        <Comparison />
         <Services />
-        <Process />
         <Portfolio />
+        <Process />
+        <Comparison />
         <Pricing />
         <FAQ />
       </main>

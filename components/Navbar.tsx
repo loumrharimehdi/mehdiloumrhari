@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight, Heart } from 'lucide-react';
 
@@ -15,7 +16,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className={`fixed top-6 left-0 right-0 z-50 transition-all duration-300 flex justify-center px-4`}>
-      <div className={`glass-nav rounded-full transition-all duration-500 flex items-center justify-between px-6 py-3 border border-white/40 ${isScrolled ? 'w-full max-w-4xl shadow-xl shadow-black/5 bg-white/80' : 'w-full max-w-6xl shadow-sm bg-white/50'}`}>
+      <div className={`glass-nav rounded-full transition-all duration-500 flex items-center justify-between px-6 py-3 border border-white/40 ${isScrolled ? 'w-full max-w-4xl shadow-xl shadow-black/5 bg-white/90' : 'w-full max-w-6xl shadow-sm bg-white/70'}`}>
         
         {/* Logo / Name */}
         <div className="flex items-center gap-2 font-bold text-lg tracking-tight group cursor-pointer">
@@ -50,7 +51,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="absolute top-24 left-4 right-4 glass-panel rounded-[2rem] p-6 flex flex-col gap-4 md:hidden animate-fade-in origin-top border border-white/60 bg-white/90 shadow-2xl z-50">
+        <div className="absolute top-24 left-4 right-4 glass-panel rounded-[2rem] p-6 flex flex-col gap-4 md:hidden animate-fade-in origin-top border border-white/60 bg-white/95 shadow-2xl z-50">
           <a href="#services" className="text-lg font-medium text-[#1D1D1F] py-3 border-b border-gray-100" onClick={() => setMobileMenuOpen(false)}>Services</a>
           <a href="#pricing" className="text-lg font-medium text-[#1D1D1F] py-3 border-b border-gray-100" onClick={() => setMobileMenuOpen(false)}>Tarifs</a>
           <a href="https://wa.me/212711152775" className="ios-btn-gradient py-4 rounded-xl text-center text-white font-bold mt-2 shadow-lg shadow-pink-200" onClick={() => setMobileMenuOpen(false)}>

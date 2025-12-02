@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Rocket, Code, Heart, MessageCircle } from 'lucide-react';
 import { ServiceItem } from '../types';
@@ -28,11 +29,12 @@ const services: ServiceItem[] = [
 
 export const Services: React.FC = () => {
   return (
-    <section id="services" className="py-32 px-6 max-w-7xl mx-auto">
-      <div className="mb-20 text-center">
+    <section id="services" className="py-24 md:py-32 px-6 max-w-7xl mx-auto w-full">
+      <div className="mb-20 text-center flex flex-col items-center">
         <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-[#1D1D1F]">
           Services : <span className="text-[#FF69B4]">Site Internet</span>
         </h2>
+        <div className="w-20 h-1 bg-[#FF69B4] rounded-full opacity-20"></div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -47,8 +49,8 @@ export const Services: React.FC = () => {
             </div>
             
             <div className="flex-1 flex flex-col items-center">
-              <h3 className="text-3xl font-bold mb-4 text-[#1D1D1F] tracking-tight">{service.title}</h3>
-              <p className="text-gray-500 font-medium leading-relaxed text-lg max-w-sm mx-auto">{service.description}</p>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-[#1D1D1F] tracking-tight">{service.title}</h3>
+              <p className="text-gray-500 font-medium leading-relaxed text-base md:text-lg max-w-sm mx-auto">{service.description}</p>
             </div>
           </div>
         ))}
